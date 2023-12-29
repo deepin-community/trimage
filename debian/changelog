@@ -1,5 +1,58 @@
-template-repository (1.0-1) unstable; urgency=medium
+trimage (1.0.6-2) unstable; urgency=medium
 
-  * Initial release
+  * Team upload.
+  * Fix watch file
+  * Standards-Version: 4.6.1 (routine-update)
+  * debhelper-compat 13 (routine-update)
+  * Add salsa-ci file (routine-update)
+  * Rules-Requires-Root: no (routine-update)
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Name.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Andreas Tille <tille@debian.org>  Tue, 06 Dec 2022 16:06:09 +0100
+
+trimage (1.0.6-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream version
+    Closes: #930279
+  * Point watch file to upstream release tags
+  * Build using python3-pyqt5
+    Closes: #935352, #938720
+  * debhelper-compat 12
+  * Standards-Version: 4.4.1
+  * Trim trailing whitespace.
+  * Use secure URI in Homepage field.
+  * Set upstream metadata fields: Repository, Repository-Browse.
+
+ -- Andreas Tille <tille@debian.org>  Wed, 04 Dec 2019 12:19:41 +0100
+
+trimage (1.0.5+git20130126.e47888e-1) unstable; urgency=medium
+
+  * Team upload.
+  * Package latest status from Github
+     - Added manpage (Closes: #831542)
+     - Fix category in desktop file (Closes: #616293)
+     - Added note that your EXIF will go away if you use Trimage
+       (at least some enhancement for bug #640318)
+  * Take over package in Debian PhotoTools team maintenance
+  * Add watch file pointing to HEAD on github since two bugs reported
+    to Debian are fixed upstream and one is partly addressed
+  * Remove ancient XS-Python-Version field
+  * debhelper 11
+  * Standards-Version: 4.2.1
+  * Remove obsolete pycompat
+
+ -- Andreas Tille <tille@debian.org>  Tue, 23 Oct 2018 11:35:26 +0200
+
+trimage (1.0.5-1.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Build using dh-python. Closes: #786255.
+
+ -- Matthias Klose <doko@debian.org>  Sat, 22 Aug 2015 13:49:24 +0200
+
+trimage (1.0.5-1) unstable; urgency=low
+
+  * Initial Release (closes: #598875)
+
+ -- Kilian Valkhof <kilian@kilianvalkhof.com>  Sun, 26 Sep 2010 15:24:04 +0200

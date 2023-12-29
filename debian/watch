@@ -1,0 +1,7 @@
+version=4
+
+#opts="mode=git,pretty=1.0.5+git%cd.%h" \
+#    https://github.com/Kilian/Trimage.git HEAD
+
+opts="filenamemangle=s%(?:.*?)?v?(\d[\d.]*)\.tar\.gz%@PACKAGE@-$1.tar.gz%" \
+  https://github.com/Kilian/Trimage/tags .*/@ANY_VERSION@@ARCHIVE_EXT@
